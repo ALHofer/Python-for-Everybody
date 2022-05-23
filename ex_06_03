@@ -1,0 +1,12 @@
+string = input('Enter word:')
+character = input('Enter letter:')
+
+def count(string, character):
+    index = 0
+    for letter in string:
+        if letter == character:
+            index = index + 1
+    return index
+
+answer = count(string, character)
+print('Number of times letter is found:', answer)
